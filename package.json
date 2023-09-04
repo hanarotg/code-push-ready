@@ -1,0 +1,17 @@
+{
+  "name": "@hanarotg/react-native-codepush-autoset",
+  "version": "1.0.0",
+  "description": "commands automatically update file settings for code push in your react-native project",
+  "main": "index.js",
+  "bin": {
+    "script1": "bin/runScript1.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.5"
+  },
+  "author": "TaeGyeong Lee",
+  "license": "MIT"
+}
