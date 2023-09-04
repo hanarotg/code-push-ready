@@ -1,3 +1,9 @@
 #! /usr/bin/env node
 var shell = require("shelljs");
-shell.exec("echo Hi");
+
+const os = require("os");
+
+if (os.platform() === "darwin") {
+  shell.exec("./macos/init.sh");
+} else if (os.platform() === "win32") {
+}
