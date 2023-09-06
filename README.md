@@ -2,6 +2,8 @@
 
 commands automatically update file settings for code push in your react-native project
 
+> This libraray is incomplete! Do not use in your project yet
+
 ## Guide
 
 1. install react-native-codepush-autoset

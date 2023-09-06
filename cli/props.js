@@ -6,7 +6,7 @@ const modulePath = fileURLToPath(moduleURL);
 const currentModuleDirectory = path.dirname(modulePath);
 const projectDir = path.resolve(currentModuleDirectory, "../../..");
 
-const projectNameIndex = projectDir.lastIndexOf('/')
-const projectName = projectDir.slice(projectNameIndex+1)
+const projectNameIndex = projectDir.lastIndexOf("/");
+const projectName = projectDir.slice(projectNameIndex + 1);
 
-export { projectDir, projectName};
+export { projectDir, projectName };

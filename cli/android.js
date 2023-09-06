@@ -11,7 +11,7 @@ const updateAndroidSettingsGradle = () => {
   const adr = `${projectDir}/android/settings.gradle`;
   const content = `\ninclude ':app', ':react-native-code-push'\nproject(':react-native-code-push').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-code-push/android/app')`;
 
-  console.log(chalk.blue(`[ Updating ] ${adr}`))
+  console.log(chalk.blue(`[ Updating ] ${adr}`));
 
   fs.readFile(adr, "utf8", (err, data) => {
     if (err) {
@@ -35,7 +35,7 @@ const updateAndroidBuildGradle = () => {
   const adr = `${projectDir}/android/app/build.gradle`;
   const content = `\napply from: "../../node_modules/react-native-code-push/android/codepush.gradle"`;
 
-  console.log(chalk.blue(`[ Updating ] ${adr}`))
+  console.log(chalk.blue(`[ Updating ] ${adr}`));
 
   fs.readFile(adr, "utf8", (err, data) => {
     if (err) {
@@ -66,7 +66,7 @@ const updateAndroidMainApplication = () => {
       return CodePush.getJSBundleFile();
   }`;
 
-  console.log(chalk.blue(`[ Updating ] ${adr}`))
+  console.log(chalk.blue(`[ Updating ] ${adr}`));
 
   fs.readFile(adr, "utf8", (err, data) => {
     if (err) {
@@ -75,18 +75,17 @@ const updateAndroidMainApplication = () => {
     }
 
     var modifiedContent = "";
-    const lines = data.split('\n')
+    const lines = data.split("\n");
 
-    for(const line of lines){
+    for (const line of lines) {
       if (line.includes(`public class MainApplication`)) {
-        modifiedContent += content1 + "\n"
-      }
-      else if(line.includes(`new DefaultReactNativeHost(this) {`)){
-        modifiedContent += line + "\n" + content2 + "\n"
-        continue
+        modifiedContent += content1 + "\n";
+      } else if (line.includes(`new DefaultReactNativeHost(this) {`)) {
+        modifiedContent += line + "\n" + content2 + "\n";
+        continue;
       }
 
-      modifiedContent += line + "\n"
+      modifiedContent += line + "\n";
     }
 
     fs.writeFile(adr, modifiedContent, "utf8", (err) => {
@@ -97,10 +96,13 @@ const updateAndroidMainApplication = () => {
       console.log(`Successfully modified ${adr}`);
     });
   });
-
 };
 
 // APPCENTER cli
 const updateAndroidStringDeploymentKey = () => {};
 
-export { updateAndroidSettingsGradle, updateAndroidBuildGradle, updateAndroidMainApplication };
+export {
+  updateAndroidSettingsGradle,
+  updateAndroidBuildGradle,
+  updateAndroidMainApplication,
+};
