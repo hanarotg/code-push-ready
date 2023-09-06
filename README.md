@@ -2,14 +2,12 @@
 
 commands automatically update file settings for code push in your react-native project
 
-###
-
-### Guide
+## Guide
 
 1. install react-native-codepush-autoset
 
    ```
-   npm i @hanarotg/react-native-codepush-autoset
+   npm i react-native-codepush-autoset
    ```
 
 2. go to your react-native project
@@ -25,15 +23,15 @@ commands automatically update file settings for code push in your react-native p
 
 Done!
 
-### To-do list
+## To-do list
 
 - [ ] ios
   - [ ] appcenter
-  - [ ] [ ] codepush
+  - [ ] codepush
 - [ ] android
   - [ ] appcetner
   - [ ] codepush
-    - [ ] considering already code exist
+    - [ ] considering in case of code exist
     - [x] build.gradle
     - [x] settings.gradle
     - [x] MainApplication.java
