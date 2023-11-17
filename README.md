@@ -1,6 +1,6 @@
 # code-push-ready
 
-![banner](./banner.png)
+<img src="./banner.png" width="200px"/>
 
 commands automatically update file settings for code push in your react-native project
 
