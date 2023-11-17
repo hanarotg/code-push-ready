@@ -1,8 +1,8 @@
-# react-native-codepush-autoset
+# code-push-ready
+
+![banner](./banner.png)
 
 commands automatically update file settings for code push in your react-native project
-
-> This libraray is incomplete! Do not use in your project yet
 
 ## Guide
 
