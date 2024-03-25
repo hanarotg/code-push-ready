@@ -1,10 +1,15 @@
 # code-push-ready
 
-<img src="./banner.png" width="200px"/>
+| code-push-ready       | official                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `code-push-ready run` | [`CodePush Introduction`](https://learn.microsoft.com/en-us/appcenter/distribution/codepush/) [`Releasing CodePush updates using the App Center CLI`](https://learn.microsoft.com/en-us/appcenter/distribution/codepush/cli) [`React Native Client SDK`](https://learn.microsoft.com/en-us/appcenter/distribution/codepush/rn-overview) [`Get Started with the React Native Client SDK`](https://learn.microsoft.com/en-us/appcenter/distribution/codepush/rn-get-started) and so on... |
 
 commands automatically update file settings for code push in your react-native project
 
 ## Guide
+
+> [!WARNING]  
+> The guide below has deprecated, it will be updated.
 
 1. install react-native-codepush-autoset
 
